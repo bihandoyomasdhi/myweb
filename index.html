@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
+
+</head>
+
+
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <a href="#">
+                <img src="logo_BM.png" alt="Logo BM">
+            </a>
+        </div>
+
+        <ul class="menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#model">PORTOFOLIO</a></li>
+            <li>
+                <a href="https://www.instagram.com/bihandoyomasdhi/" target="_blank">
+                    <img src="logo-ig-png-32457.png" alt="Instagram" class="ig">
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="data-diri">
+            <h1>Bihandoyo<br>Masdhi</h1>
+            <p>
+                Saya berfokus pada desain 3D sebagai media untuk mengubah ide menjadi visual yang kuat,
+                detail, dan berkarakter, dengan standar kualitas terbaik.
+            </p>
+        </div>
+
+        <div class="foto-diri">
+            <img src="yoyo.png" alt="Bihandoyo Masdhi">
+        </div>
+    </div>
+</header>
+
+ <!-- =======================
+     PORTFOLIO - AUTODESK INVENTOR
+======================== -->
+<section id="model">
+
+    <h2 class="judul">AUTODESK INVENTOR</h2>
+
+    <div class="wrapper3">
+
+        <div class="border3d">
+            <model-viewer
+                src="BATCAT.glb"
+                camera-controls
+                auto-rotate
+                bounds="tight"
+                orientation="0deg 20deg 30deg">
+            </model-viewer>
+
+            <div class="card-info">
+                <p>BAT-CAT</p>
+            </div>
+        </div>
+
+        <div class="border3d">
+            <model-viewer
+                src="COWBOY CAT.glb"
+                camera-controls
+                auto-rotate
+                bounds="tight"
+                orientation="0deg 60deg 30deg">
+            </model-viewer>
+
+            <div class="card-info">
+                <p>COWBOY CAT</p>
+            </div>
+        </div>
+
+        <div class="border3d">
+            <model-viewer
+                src="SPIDERCAT.glb"
+                camera-controls
+                auto-rotate
+                bounds="tight"
+                orientation="0deg 60deg 30deg">
+            </model-viewer>
+
+            <div class="card-info">
+                <p>SPIDER CAT</p>
+            </div>
+        </div>
+
+        <div class="border3d">
+            <model-viewer
+                src="SUNCAT.glb"
+                camera-controls
+                auto-rotate
+                bounds="tight"
+                orientation="0deg 60deg 30deg">
+            </model-viewer>
+
+            <div class="card-info">
+                <p>SUN CAT</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- =======================
+         PORTFOLIO - BLENDER
+    ====================== -->
+
+    <h2 class="judul">BLENDER</h2>
+
+    <div class="wrapper3">
+
+        <div class="border3d">
+            <model-viewer
+                src="furniture.glb"
+                camera-controls
+                auto-rotate
+                bounds="tight">
+            </model-viewer>
+
+            <div class="card-info">
+                <p>FURNITURE</p>
+            </div>
+        </div>
+
+        <div class="border3d">
+            <model-viewer
+                src="turetKJ.glb"
+                camera-controls
+                auto-rotate
+                bounds="tight">
+            </model-viewer>
+
+            <div class="card-info">
+                <p>TURRET KILLJOY</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+
+</html>
