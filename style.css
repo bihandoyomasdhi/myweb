@@ -147,7 +147,7 @@ header .container {
     margin: 0 auto 80px;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
     justify-items: center;
     gap: 50px;
 }
@@ -164,13 +164,13 @@ header .container {
 
 /* Card Model */
 .border3d{
-    width: 300px;
+    width: 280px;
 }
 
 /* Model Viewer */
 .border3d model-viewer{
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     display: block;
 
     border: 1px solid #fff;
@@ -202,6 +202,151 @@ header .container {
     letter-spacing: 2px;
     color: #fff;
 }
+
+
+
+
+
+/* ================= TABLET & MOBILE 1024px ================= */
+
+@media (max-width: 1024px) {
+
+    /* ==========================
+       NAV
+    ========================== */
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto Mono", monospace;
+    }
+
+    /* ==========================
+       NAVBAR
+    ========================== */
+
+    .navbar{
+        width: 100%;
+    }
+
+    .navbar .container{
+        width: 92%;
+        margin: 0 auto;
+        padding: 15px 20px;
+        box-sizing: border-box;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo img{
+        width: 35px;
+        height: auto;
+    }
+
+    .menu{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .menu li{
+        list-style: none;
+    }
+
+    .menu li a{
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .ig{
+        width: 22px;
+        height: 22px;
+    }
+
+    /* ==========================
+       HEADER
+    ========================== */
+    header{
+        padding-top: 80px;
+        min-height: auto;
+    }
+
+    header .container{
+        width: 80%;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: row;      /* Bersampingan */
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .data-diri{
+        width: 55%;
+        order: 1;
+        text-align: left;
+    }
+
+    .data-diri h1{
+        font-size: 42px;
+    }
+
+    .data-diri p{
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .foto-diri{
+        width: 45%;
+        order: 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .foto-diri img{
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    /* ==========================
+       MODEL
+    ========================== */
+
+.wrapper3{
+    width: 92%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.border3d{
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.border3d model-viewer{
+    width: 100%;
+    height: 300px;
+}
+
+.judul{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+}
+
+
+
+
+
 
 /* ================= MOBILE 768px  ================= */
 
@@ -275,9 +420,8 @@ header .container{
     margin: 0 auto;
 
     display: flex;
-    flex-direction: column; /* Teks di atas, gambar di bawah */
+    flex-direction: column;
     align-items: center;
-    text-align: center;
     gap: 30px;
 }
 
@@ -290,27 +434,15 @@ header .container{
 .data-diri h1{
     margin-bottom: 15px;
     font-size: 36px;
+    text-align: center;   /* Judul di tengah */
 }
 
 .data-diri p{
     max-width: 100%;
     font-size: 16px;
     line-height: 1.7;
-}
-
-/* Foto */
-.foto-diri{
-    width: 100%;
-    order: 2;
-
-    display: flex;
-    justify-content: center;
-}
-
-.foto-diri img{
-    width: 100%;
-    max-width: 280px;
-    height: auto;
+    text-align: justify;  /* Rata kanan-kiri */
+    text-align-last: center; /* Baris terakhir di tengah */
 }
 
 /* ==========================
@@ -321,9 +453,10 @@ header .container{
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;          /* Jarak antar model */
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+    gap: 30px;
     padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .border3d{
@@ -343,3 +476,134 @@ header .container{
 }
 
 }
+
+
+
+/* ================= MOBILE 320px ================= */
+
+@media (max-width: 320px) {
+
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto Mono", monospace;
+    }
+
+    /* ==========================
+       NAVBAR
+    ========================== */
+
+    .navbar{
+        width: 100%;
+    }
+
+    .navbar .container{
+        width: 95%;
+        margin: 0 auto;
+        padding: 12px 10px;
+        box-sizing: border-box;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo img{
+        width: 30px;
+        height: auto;
+    }
+
+    .menu{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu li{
+        list-style: none;
+    }
+
+    .menu li a{
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    .ig{
+        width: 18px;
+        height: 18px;
+    }
+
+    /* ==========================
+       HEADER
+    ========================== */
+
+header{
+    padding-top: 80px;
+    min-height: auto;
+}
+
+header .container{
+    width: 92%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Biodata */
+.data-diri{
+    width: 100%;
+    order: 1;
+}
+
+.data-diri h1{
+    margin-bottom: 15px;
+    font-size: 36px;
+    text-align: center;   /* Judul di tengah */
+}
+
+.data-diri p{
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;  /* Rata kanan-kiri */
+    text-align-last: center; /* Baris terakhir di tengah */
+}
+    /* ==========================
+       MODEL
+    ========================== */
+
+    .wrapper3{
+        width: 95%;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .border3d{
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .border3d model-viewer{
+        width: 100%;
+        height: 250px;
+    }
+
+    .judul{
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+}
+
+
+
+
